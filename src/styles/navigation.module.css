@@ -1,0 +1,54 @@
+.nav__container {
+  display: flex;
+  flex-direction: row;
+  background-color: #f4f2eb;
+}
+
+.nav__logo {
+  display: flex;
+  flex-direction: column;
+  width: 5%;
+  margin: 2%;
+}
+
+.nav__block {
+  display: flex;
+  flex-direction: column;
+  /* text-align: right; */
+  justify-content: space-between;
+  width: 100%;
+  margin: auto;
+}
+
+.nav__links {
+  display: flex;
+  flex-direction: row;
+  justify-content: right;
+  width: 100%;
+}
+
+.nav__socials {
+  display: flex;
+  justify-content: space-between;
+}
+
+.nav__login {
+  padding: 0 2%;
+}
+
+.nav__socials {
+  display: flex;
+  justify-content: space-between;
+}
+
+.nav__routes {
+  display: flex;
+  justify-content: right;
+}
+
+.nav__route {
+}
+
+.nav__route_selected {
+  font-weight: bold;
+}
