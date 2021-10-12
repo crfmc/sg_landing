@@ -6,26 +6,30 @@ export const routes = [
   },
   {
     name: "Our Portfolio",
-    url: "/"
+    url: "/portfolio"
   },
   {
     name: "Suppliers",
-    url: "/"
+    url: "/suppliers"
   },
   {
     name: "Careers",
-    url: "/"
+    url: "/careers"
   },
   {
     name: "Our Causes",
-    url: "/"
+    url: "/causes"
   },
   {
     name: "News",
-    url: "/"
+    url: "/news"
   },
   {
     name: "About Us",
-    url: "/"
+    url: "/about"
   }
 ];
+
+export const isCurrentRoute = (route) => {
+  return window.location.pathname === route.url
+}
