@@ -1,7 +1,10 @@
 import logo from './logo.svg';
 import './App.css';
+
+// Importing Navigation component and Screens
 import Navigation from './components/Navigation';
-import Banner from './screens/Banner.js';
+import Screen1 from './screens/Screen1.js';
+import Screen2 from './screens/Screen2.js';
 
 function App() {
   return (
@@ -9,7 +12,8 @@ function App() {
       <header className="App-header">
       </header>
       <Navigation />
-      <Banner />
+      <Screen1 />
+      <Screen2 />
     </div>
   );
 }
