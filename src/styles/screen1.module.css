@@ -1,3 +1,13 @@
+@font-face {
+  font-family: "inria-serif-regular";
+  src: url("./fonts/Inria_Serif/InriaSerif-Regular.ttf");
+}
+
+@font-face {
+  font-family: "inria-serif-italic";
+  src: url("./fonts/Inria_Serif/InriaSerif-Italic.ttf");
+}
+
 .banner__container {
   position: absolute;
   display: flex;
@@ -27,6 +37,9 @@
 .banner__text_header {
   color: white;
   margin: 0;
+  font-family: inria-serif-regular, sans-serif;
+  font-style: normal;
+  font-weight: 100;
 }
 
 .banner__text_subtext {
@@ -86,4 +99,10 @@
   position: absolute;
   margin: 66vh auto auto 80%;
   z-index: 2;
+}
+
+@media (max-width: 700px) {
+  .banner__crest {
+    display: none;
+  }
 }
