@@ -73,10 +73,27 @@
   justify-content: right;
 }
 
+/* Safari */
+_::-webkit-full-page-media,
+_:future,
+:root .nav__routes {
+  margin-left: auto;
+  text-align: center;
+  width: 80%;
+}
+
 .nav__route {
   padding: 2% 2% 0 0;
   text-decoration: none;
   color: gray;
+}
+
+/* Safari */
+_::-webkit-full-page-media,
+_:future,
+:root .nav__route {
+  margin: auto;
+  width: 100%;
 }
 
 .nav__route:visited {
@@ -91,18 +108,10 @@
   font-weight: bold;
 }
 
-/* Styling for safari browsers 11+, only for the above selector */
-@media not all and (min-resolution: 0.001dpcm) {
-  @supports (-webkit-appearance: none) and (stroke-color: transparent) {
-    .nav__socials {
-      margin-left: auto;
-    }
-
-    .nav__routes {
-      margin-left: auto;
-      width: auto;
-    }
-  }
+_::-webkit-full-page-media,
+_:future,
+:root .nav__socials {
+  margin-left: auto;
 }
 
 @media (max-width: 700px) {

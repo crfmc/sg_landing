@@ -64,13 +64,13 @@
 }
 
 /* Styling for safari browsers 11+, only for the above selector */
-@media not all and (min-resolution: 0.001dpcm) {
+/* @media not all and (min-resolution: 0.001dpcm) {
   @supports (-webkit-appearance: none) and (stroke-color: transparent) {
     .screen2__panel_img {
       height: intrinsic;
     }
   }
-}
+} */
 
 .screen2__pins {
   display: flex;
