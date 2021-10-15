@@ -50,3 +50,13 @@
     margin-top: 15%;
   }
 }
+
+@media (max-width: 450px) {
+  .pin__subtext_container {
+    justify-content: center;
+  }
+
+  .pin__subtext {
+    margin-right: 5%;
+  }
+}
