@@ -1,7 +1,13 @@
 import React from 'react';
 
+// Importing stylesheet
 import * as styles from '../styles/sideNav.module.css'
 
+/**
+ * sideNav is a component for the side navigation of the site.
+ * Note:
+ *  - Only displayed for smaller screens
+ */
 export default function sideNav(props) {
   return (
     <div className={styles.sideNav__container}>

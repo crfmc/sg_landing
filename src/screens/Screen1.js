@@ -1,10 +1,10 @@
 import React from 'react';
 
+// Importing stylesheet
 import * as styles from '../styles/screen1.module.css';
 
 // Imports the text from a JSON object
 import { banner } from '../data/text.json';
-
 
 // import the images in the banner
 import stock from '../images/image-a 1.png';
@@ -12,6 +12,7 @@ import lift from '../images/image-b 1.png';
 import crest from '../images/icons/Group 32.svg';
 
 
+// Renders the set of images on the right side of the banner
 const renderBannerRight = () => {
   return (
     <div className={styles.banner__panel_right}>
@@ -28,6 +29,14 @@ const renderBannerRight = () => {
   )
 }
 
+/**
+ * Component for the first screen (aka banner) of the site
+ * 
+ * Note:
+ *  - It is divided into two sections, [panel_left] and [panel_right].
+ *    For smaller screens, the orientation flips (via flex-direction),
+ *    with [panel_right] on top.
+ */
 export default function Screen1() {
   return (
     <div>

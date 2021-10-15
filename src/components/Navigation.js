@@ -1,19 +1,23 @@
 import React, {useState} from 'react';
 
+// Components included in this (only displayed for smaller screens)
 import SideNav from '../components/sideNav.js';
 
+// Importing stylesheet
 import * as styles from '../styles/navigation.module.css';
 
-
+// Importing images for the component
 import logo from '../images/icons/icon.svg';
 import instagram from '../images/icons/Instagram.svg';
 import facebook from '../images/icons/Facebook.svg';
 import twitter from '../images/icons/Twitter.svg'
 import login from '../images/icons/Rectangle 33.svg';
 
+// Data for this component and a function for identifying the current route
 import { routes, isCurrentRoute } from '../data/routes.js';
 
 
+// Renders the list of links to the routes of the site
 const renderRoutes = () => {
   return (
       routes.map((route, i) => {
@@ -35,6 +39,7 @@ const renderRoutes = () => {
   )
 }
 
+// Renders the links to social media
 const renderSocials = () => {
   return (
     
@@ -46,7 +51,16 @@ const renderSocials = () => {
   )
 }
 
+/**
+ * A component for navigating through the routes of the site
+ * 
+ * Note:
+ *  - For smaller screen widths, the navigation becomes hidden
+ *    and opened by the hamburger icon on the upper left.
+ */
 export default function Navigation() {
+
+  // Triggers the sideNav on small screens
   const [sideNav, setSideNav] = useState(false);
 
   return (
