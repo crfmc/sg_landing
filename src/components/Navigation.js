@@ -11,7 +11,7 @@ import facebook from '../images/icons/Facebook.svg';
 import twitter from '../images/icons/Twitter.svg'
 import login from '../images/icons/Rectangle 33.svg';
 
-import { routes, isCurrentRoute } from '../routes.js';
+import { routes, isCurrentRoute } from '../data/routes.js';
 
 
 const renderRoutes = () => {

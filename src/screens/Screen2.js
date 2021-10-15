@@ -1,18 +1,33 @@
 import React from 'react'
 
 import * as styles from '../styles/screen2.module.css';
+
+
+// Import information for pin components
 import Pin from '../components/Pin.js';
 
+import bottle from '../images/icons/bottle.svg';
+import gears from '../images/icons/Group 6.svg';
+import bin from '../images/icons/Layer 1.svg';
 
-import { screen2, pins } from '../text.json'
+
+import { screen2, pins } from '../data/text.json';
 
 import champagne from '../images/shutterstock_1106346314 1.png';
 
 const renderPins = () => {
+  const srcs = [bottle, bin, gears];
+
   return (
     pins.map((pin, i) => {
       return (
-        <Pin header={pin.header} subtext={pin.subtext} key={i} />
+        <Pin
+          src={srcs[i]}
+          alt="decorative icon"
+          header={pin.header}
+          subtext={pin.subtext}
+          key={i}
+        />
       )
     })
   )

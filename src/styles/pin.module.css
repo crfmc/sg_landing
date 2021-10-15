@@ -6,26 +6,41 @@
 }
 
 .pin__icon {
-  height: 15vh;
-  width: 15vh;
+  display: flex;
+  justify-content: center;
+  height: 20vh;
+  width: 20vh;
   margin: auto;
   border-radius: 100px;
-  background-color: #d8b243;
-  opacity: 0.3;
+  background-color: #d8b3434d;
+}
+
+.pin__icon_img {
+  width: 70%;
+  height: 60%;
+  margin: auto;
 }
 
 .pin__text {
   display: flex;
   flex-direction: column;
+  margin-top: 5%;
 }
 
 .pin__header {
   margin: auto;
+  font-size: 150%;
+  font-family: "inria-serif-regular", serif;
 }
 
 .pin__subtext_container {
   display: flex;
-  justify-content: center;
-  margin: auto;
-  width: 100%;
+  justify-content: space-evenly;
+  font-family: "niveau-grotesk-light", sans-serif;
+  margin: 5% auto;
+  width: 60%;
+  font-weight: 100;
+}
+
+.pin__arrow {
 }

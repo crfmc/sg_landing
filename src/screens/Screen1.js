@@ -3,7 +3,7 @@ import React from 'react';
 import * as styles from '../styles/screen1.module.css';
 
 // Imports the text from a JSON object
-import { banner } from '../text.json';
+import { banner } from '../data/text.json';
 
 
 // import the images in the banner
