@@ -51,7 +51,7 @@
   background-image: inherit;
   background-blend-mode: multiply;
   width: 55%;
-  height: 45%;
+  height: 36vw;
   margin: 1% 0 0 -1%;
   border-radius: 15px;
   z-index: 0;
@@ -62,6 +62,7 @@
   width: 42%;
   border-radius: 10px;
   z-index: 1;
+  height: fit-content;
 }
 
 .screen2__pins {
@@ -70,4 +71,81 @@
   margin-left: 21.5%;
   margin-top: 10%;
   justify-content: space-evenly;
+}
+
+@media (max-width: 800px) {
+  .screen2__panel_container {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .screen2__panel_text {
+    margin: 5% 5% 0 0;
+  }
+}
+
+@media (max-width: 700px) {
+  .screen2__container {
+    height: 400vh;
+  }
+
+  .screen2__panel_text h1 {
+    font-size: 300%;
+  }
+}
+
+@media (max-width: 650px) {
+  .screen2__container {
+    height: 400vh;
+  }
+
+  .screen2__panel_img {
+    width: 50%;
+    margin: auto;
+    /* border-radius: 0; */
+  }
+
+  .screen2__panel {
+    height: auto;
+    width: 100%;
+  }
+
+  .screen2__panel_container {
+    width: 100%;
+    margin: 10% auto;
+  }
+
+  .screen2__sticker {
+    margin: 0 2% 4% 0;
+    width: 50%;
+    height: 48vw;
+  }
+
+  .screen2__panel_text h1 {
+    font-size: 250%;
+  }
+
+  .screen2__panel_text p {
+    font-size: 100%;
+  }
+
+  .screen2__pins {
+    margin: auto;
+  }
+}
+
+@media (max-width: 450px) {
+  .screen2__panel_text h1 {
+    font-size: 200%;
+  }
+
+  .screen2__pins {
+    flex-direction: column;
+  }
+}
+
+@media (max-width: 400px) {
+  .screen2__panel_text h1 {
+    font-size: 200%;
+  }
 }

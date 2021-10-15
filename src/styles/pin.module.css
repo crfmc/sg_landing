@@ -44,3 +44,9 @@
 
 .pin__arrow {
 }
+
+@media (max-width: 650px) {
+  .pin__container {
+    margin-top: 15%;
+  }
+}
