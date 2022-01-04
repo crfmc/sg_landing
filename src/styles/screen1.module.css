@@ -1,0 +1,244 @@
+@font-face {
+  font-family: "inria-serif-regular";
+  src: url("./fonts/Inria_Serif/InriaSerif-Regular.ttf");
+}
+
+@font-face {
+  font-family: "inria-serif-italic";
+  src: url("./fonts/Inria_Serif/InriaSerif-Italic.ttf");
+}
+
+@font-face {
+  font-family: "niveau-grotesk-regular";
+  src: url("./fonts/NiveauGrotesk/NiveauGroteskRegular.ttf");
+}
+
+@font-face {
+  font-family: "niveau-grotesk-light";
+  src: url("./fonts/NiveauGrotesk/NiveauGroteskLight.ttf");
+}
+
+.banner__container {
+  position: absolute;
+  display: flex;
+  height: 85vh;
+  background-color: #cb0007;
+}
+
+.banner__overlay {
+  position: absolute;
+  height: 85.25vh;
+  width: 100%;
+  background-image: url("../images/overlay.svg");
+  mix-blend-mode: multiply;
+  z-index: 2;
+}
+
+/* Left side of panel */
+.banner__panel_left {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  width: 40%;
+  height: 80%;
+  margin: 5% 5% 0 5%;
+}
+
+.banner__text_header {
+  color: white;
+  margin: 0;
+  font-family: inria-serif-regular, sans-serif;
+  font-size: 400%;
+  font-style: normal;
+  font-weight: 200;
+}
+
+.banner__text_subtext {
+  color: white;
+  width: 90%;
+  margin: 0;
+  font-family: "niveau-grotesk-regular", sans-serif;
+  font-size: 110%;
+}
+
+.banner__button {
+  background-color: #d8b243;
+  font-family: "niveau-grotesk-regular", sans-serif;
+  font-size: 100%;
+  font-weight: 800;
+  letter-spacing: 2px;
+  width: 45%;
+  padding: 4% 4%;
+  border: none;
+  border-radius: 5px;
+  text-align: center;
+  z-index: 3;
+}
+
+.banner__button:hover {
+  cursor: pointer;
+}
+
+/* Right side of panel */
+.banner__panel_right {
+  position: relative;
+  display: flex;
+  width: 50%;
+}
+
+.banner__img {
+  border-radius: 15px;
+  box-shadow: rgb(20, 20, 20) 0px 0px 5px 0px;
+}
+
+.banner__img_stock {
+  position: absolute;
+  width: 65%;
+  height: auto;
+  z-index: 2;
+  margin: 5% 0 10% 0;
+}
+
+.banner__img_lift {
+  position: absolute;
+  width: 35%;
+  margin: 40% auto auto 50%;
+  height: auto;
+  z-index: 2;
+}
+
+.banner__sticker {
+  position: absolute;
+  background-color: #d8b243;
+  background-image: inherit;
+  background-blend-mode: multiply;
+  width: 45%;
+  height: 50%;
+  margin: 30% 0 0 25%;
+  border-radius: 15px;
+  z-index: 1;
+}
+
+.banner__crest {
+  position: absolute;
+  margin: 66vh auto auto 80%;
+  z-index: 2;
+}
+
+@media (max-width: 850px) {
+  .banner__text_header {
+    font-size: 300%;
+  }
+
+  .banner__text_subtext {
+    font-size: 100%;
+  }
+
+  .banner__img_lift {
+    position: absolute;
+    width: 50%;
+    margin: 45% auto auto 20%;
+    height: auto;
+    z-index: 2;
+  }
+}
+
+@media (max-width: 700px) {
+  .banner__panel_left {
+    width: 60%;
+  }
+
+  .banner__img_stock {
+    width: 90%;
+    margin: 25% 0 10% 0;
+  }
+
+  .banner__sticker {
+    width: 60%;
+  }
+
+  .banner__img_lift {
+    width: 50%;
+    margin: 90% auto auto 20%;
+  }
+
+  .banner__panel_right .banner__crest {
+    display: none;
+  }
+}
+
+@media (max-width: 650px) {
+  .banner__panel_left {
+    width: 60%;
+  }
+
+  .banner__img_stock {
+    width: 90%;
+    margin: 25% 0 10% 0;
+  }
+
+  .banner__sticker {
+    width: 60%;
+  }
+
+  .banner__img_lift {
+    width: 60%;
+    margin: 90% auto auto 20%;
+  }
+
+  .banner__button {
+    font-size: 80%;
+  }
+
+  .banner__crest {
+    display: none;
+  }
+}
+
+@media (max-width: 550px) {
+  .banner__container {
+    flex-direction: column-reverse;
+    justify-content: space-between;
+  }
+
+  .banner__panel_right {
+    width: 100%;
+  }
+
+  .banner__panel_left {
+    width: 100%;
+    margin: 50% 0 0 0;
+    justify-content: space-evenly;
+  }
+
+  .banner__button {
+    font-size: 80%;
+    margin-bottom: 10%;
+  }
+
+  .banner__img_stock {
+    width: 100%;
+    box-shadow: none;
+    border-radius: 0%;
+    margin-top: 0;
+  }
+
+  .banner__img_lift,
+  .banner__sticker {
+    display: none;
+  }
+
+  .banner__crest {
+    display: none;
+  }
+
+  .banner__text_header,
+  .banner__text_subtext,
+  .banner__button {
+    margin: 0 5%;
+  }
+
+  .banner__button {
+    font-size: 100%;
+  }
+}

@@ -1,0 +1,25 @@
+{
+  "banner": {
+    "header": "To bringing people together.",
+    "subtext": "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book."
+  },
+  
+  "screen2": {
+    "header": "Knowing the numbers is never enough.",
+    "subtext": "It's about understanding the opportunities and challenges behind the numbers — and planning for a stronger future. What's the right product selection for your customers? Which tools and information could make your business even more successful? At Southern Glazer's, we tailor our services for each and every one of our customers. Because we know that when we come together, there's always something to celebrate."
+  },
+  "pins": [
+    {
+      "header": "Customers",
+      "subtext": "See our portfolio"
+    },
+    {
+      "header": "Suppliers",
+      "subtext": "Work with us"
+    },
+    {
+      "header": "Team",
+      "subtext": "Sign in or apply"
+    }
+  ]
+}

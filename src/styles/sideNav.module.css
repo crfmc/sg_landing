@@ -1,0 +1,53 @@
+.sideNav__container {
+  position: fixed;
+  left: 0;
+  background-color: rgba(0, 0, 0, 0.178);
+  height: 100vh;
+  width: 100%;
+  z-index: 4;
+}
+
+.sideNav__content {
+  display: flex;
+  flex-direction: column;
+  width: 50%;
+  height: 100vh;
+  background-color: #f4f2eb;
+  padding: 5%;
+  animation: slidein 1s;
+}
+
+.sideNav__close {
+  font-size: 150%;
+  font-weight: 400;
+  text-align: right;
+}
+
+.sideNav__logo {
+  display: flex;
+}
+
+.sideNav__logo img {
+  margin: auto;
+}
+
+.sideNav__socials {
+  display: flex;
+  width: 100%;
+  justify-content: space-evenly;
+}
+
+.sideNav__routes {
+  display: flex;
+  flex-direction: column;
+  margin: 20% auto;
+}
+
+@keyframes slidein {
+  from {
+    transform: translateX(-500px);
+  }
+  to {
+    transform: translateX(0px);
+  }
+}

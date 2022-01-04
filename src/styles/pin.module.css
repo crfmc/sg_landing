@@ -1,0 +1,59 @@
+.pin__container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  width: 100%;
+}
+
+.pin__icon {
+  display: flex;
+  justify-content: center;
+  height: 20vh;
+  width: 20vh;
+  margin: auto;
+  border-radius: 100px;
+  background-color: #d8b3434d;
+}
+
+.pin__icon_img {
+  width: 70%;
+  height: 60%;
+  margin: auto;
+}
+
+.pin__text {
+  display: flex;
+  flex-direction: column;
+  margin-top: 5%;
+}
+
+.pin__header {
+  margin: auto;
+  font-size: 150%;
+  font-family: "inria-serif-regular", serif;
+}
+
+.pin__subtext_container {
+  display: flex;
+  justify-content: space-evenly;
+  font-family: "niveau-grotesk-light", sans-serif;
+  margin: 5% auto;
+  width: 60%;
+  font-weight: 100;
+}
+
+@media (max-width: 650px) {
+  .pin__container {
+    margin-top: 15%;
+  }
+}
+
+@media (max-width: 450px) {
+  .pin__subtext_container {
+    justify-content: center;
+  }
+
+  .pin__subtext {
+    margin-right: 5%;
+  }
+}
